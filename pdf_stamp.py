@@ -180,7 +180,7 @@ def get_html(images, name='', width=210, height=297, portret=True):
     return html
    
                     
-def main(filepath):
+def test(filepath):
     with open("приказ_о_привлечении_Габдрахманову_ТГ.zip", 'rb') as f:
         data = f.read()
         pdf, certs = read_zip(data)
@@ -191,9 +191,7 @@ def main(filepath):
     with open('1.html', 'wt') as f:
         f.write(html)
 
-    
-    
-    
-    
+
+   
 if __name__=='__main__':
-    main("Газета.pdf")
+    test("Газета.pdf")
